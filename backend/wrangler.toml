@@ -1,0 +1,34 @@
+name = "ionic-pass-example"
+main = "src/index.ts"
+compatibility_date = "2023-10-02"
+
+
+#########################################################################################
+#   This must be enabled to make passkit-generator compatible with cloudflare workers   #
+#########################################################################################
+
+node_compat = true
+
+###################################################################
+###   This is needed to import `.png` files with esm imports.   ###
+###################################################################
+
+rules = [
+  { type = "Data", globs = ["**/*.png"], fallthrough = true }
+]
+
+[vars]
+WWDR = ""
+SIGNER_CERT = ""
+SIGNER_KEY = ""
+SIGNER_PASSPHRASE = ""
+
+# DEFAULTS explanations
+
+
+
+# Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
+# Note: Use secrets to store sensitive data.
+# Docs: https://developers.cloudflare.com/workers/platform/environment-variables
+# [vars]
+# MY_VARIABLE = "production_value"

@@ -1,0 +1,7 @@
+{
+  "name": "cs-digital-pass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

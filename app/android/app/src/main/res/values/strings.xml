@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">cs-digital-pass</string>
+    <string name="title_activity_main">cs-digital-pass</string>
+    <string name="package_name">cs.digital.pass</string>
+    <string name="custom_url_scheme">cs.digital.pass</string>
+</resources>
